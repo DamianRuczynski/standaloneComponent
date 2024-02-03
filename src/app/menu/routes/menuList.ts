@@ -2,6 +2,7 @@ export type MenuItem = {
   icon: string;
   name: string;
   notifications?: number;
+  link?: string;
 };
 
 export const menuList: MenuItem[] = [
