@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
+import { menuList } from './menuList';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
-  selector: 'app-routes',
+  selector: 'mdr-routes',
   standalone: true,
-  imports: [],
+  imports: [MatIconModule],
   templateUrl: './routes.component.html',
-  styleUrl: './routes.component.scss'
+  styleUrl: './routes.component.scss',
 })
 export class RoutesComponent {
-
+  public menuList = menuList;
 }
