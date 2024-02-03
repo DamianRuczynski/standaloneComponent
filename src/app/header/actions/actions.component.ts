@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
-  selector: 'app-actions',
+  selector: 'mdr-actions',
   standalone: true,
-  imports: [],
+  imports: [MatIconModule],
   templateUrl: './actions.component.html',
-  styleUrl: './actions.component.scss'
+  styleUrl: './actions.component.scss',
 })
-export class ActionsComponent {
-
-}
+export class ActionsComponent {}
