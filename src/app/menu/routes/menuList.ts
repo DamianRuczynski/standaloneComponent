@@ -1,10 +1,10 @@
-type MenuComponent = {
+export type MenuItem = {
   icon: string;
   name: string;
   notifications?: number;
 };
 
-export const menuList: MenuComponent[] = [
+export const menuList: MenuItem[] = [
   {
     icon: 'home',
     name: 'Dashboard',

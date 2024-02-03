@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
+import { MenuItemComponent } from '../../shared/menu-item/menu-item.component';
+import { settingsList } from './settingsLIst';
 
 @Component({
-  selector: 'app-settings',
+  selector: 'mdr-settings',
   standalone: true,
-  imports: [],
+  imports: [MenuItemComponent],
   templateUrl: './settings.component.html',
-  styleUrl: './settings.component.scss'
+  styleUrl: './settings.component.scss',
 })
 export class SettingsComponent {
-
+  public settings = settingsList;
 }

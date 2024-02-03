@@ -1,1 +1,4 @@
-<p>settings works!</p>
+<h3 class="subtitle">Settings</h3>
+@for( item of settings; track item.name){
+<mdr-menu-item [item]="item"></mdr-menu-item>
+}
