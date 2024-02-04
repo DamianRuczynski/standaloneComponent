@@ -1,7 +1,7 @@
-<section class="info p-4">
+<section class="info p-8">
   <h3 class="info__title">{{ data.title }}</h3>
   @for( line of data.desc; track line){
   <p class="info__line">{{ line }}</p>
   }
-  <a [href]="data.link" class="info__link"> {{ data.link }} </a>
+  <a [href]="data.link" class="info__link my-4"> {{ data.link }} </a>
 </section>

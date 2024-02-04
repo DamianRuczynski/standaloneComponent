@@ -1,8 +1,14 @@
-<section class="card p-4">
-  <img [src]="'../../../assets/card/' + data.image" [alt]="data.title" />
-  <h3 class="card__title">{{ data.title }}</h3>
+<section class="card flex flex-col p-4">
+  <img
+    [src]="'../../../assets/card/' + data.image"
+    [alt]="data.title"
+    class="self-center mb-8"
+  />
+  <h3 class="card__title my-4">{{ data.title }}</h3>
   @for( line of data.desc; track line){
   <p class="card__line">{{ line }}</p>
   }
-  <a [href]="data.link" target="_blank" class="card__link"> More Tutorials </a>
+  <a [href]="data.link" target="_blank" class="card__link my-4">
+    More Tutorials
+  </a>
 </section>
