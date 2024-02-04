@@ -1,1 +1,18 @@
-<p>knowledge-base works!</p>
+<section class="knowledge-base px-4 py-8 w-max">
+  <h2 class="knowledge-base__title">Knowledge Base</h2>
+  <section class="knowledge-base__search p-2 my-4">
+    <mdr-searchbox class="flex items-center w-full"></mdr-searchbox>
+  </section>
+  <section class="knowledge-base__cards grid grid-cols-4 gap-4 my-4">
+    @for( card of cards; track card.title){
+    <mdr-card [data]="card"></mdr-card>
+    }
+  </section>
+
+  <section class="knowledge-base__info grid grid-cols-2 gap-4 my-4">
+    @for( info of infos; track info.title){
+    <mdr-info [data]="info"></mdr-info>
+
+    }
+  </section>
+</section>

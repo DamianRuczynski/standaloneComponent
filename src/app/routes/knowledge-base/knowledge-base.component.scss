@@ -1,0 +1,17 @@
+.knowledge-base {
+  &__title {
+    color: #131523;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+  &__search {
+    background-color: #fff;
+    border: 1px solid #d9e1ec;
+    border-radius: 0.4rem;
+  }
+}
